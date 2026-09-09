@@ -1,0 +1,49 @@
+{
+    "actorSpecification": 1,
+    "fields": {
+        "type": "object",
+        "properties": {
+            "name": {
+                "title": "عنوان الإعلان",
+                "type": "string"
+            },
+            "phone": {
+                "title": "رقم الجوال",
+                "type": "string"
+            },
+            "price_sar": {
+                "title": "السعر (ريال)",
+                "type": "string"
+            },
+            "city": {
+                "title": "المدينة/الحي",
+                "type": "string"
+            },
+            "description": {
+                "title": "تفاصيل الإعلان",
+                "type": "string"
+            },
+            "url": {
+                "title": "رابط الإعلان",
+                "type": "string"
+            }
+        }
+    },
+    "views": {
+        "overview": {
+            "title": "نظرة عامة",
+            "transformation": {
+                "fields": [
+                    "name",
+                    "phone",
+                    "price_sar",
+                    "city",
+                    "url"
+                ]
+            },
+            "display": {
+                "component": "table"
+            }
+        }
+    }
+}
